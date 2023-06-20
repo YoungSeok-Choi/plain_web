@@ -6,37 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
-    <!-- <style>
-        .pwd {
-            border: 1px solid blue;
+    <style>
+        .form-div {
+            justify-content: center;
+            width: 550px;
+            height: 650px;
+            border: 5px dotted purple;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
-    </style> -->
+
+        hr {
+
+            width: 360px;
+            border: 1px solid black;
+        }
+
+        .text-input {
+            width: 350px;
+            height: 50px;
+        }
+
+        button {
+            width: 350px;
+            height: 25px;
+        }
+    </style>
     <link rel="stylesheet" href="./02-signup.css">
 </head>
 
 <body>
-    <h2>회원가입</h2>
-    <!-- <input type="text" placeholder="enter the Email" style="border:1px solid red"><br><br> -->
-    <input type="text" placeholder="enter the Email" style="border:1px solid red"><br><br>
-    <input type="text" placeholder="name"><br><br>
-    <input class="pwd" type="password" placeholder="passwd"><br><br>
-    <input class="pwd" type="password" placeholder="confirm passwd"><br><br>
+    <div class="form-div">
+        <h2>회원가입</h2>
+        <!-- <input type="text" placeholder="enter the Email" style="border:1px solid red"><br><br> -->
+        <input class="text-input" type="text" placeholder="enter the Email" style="border:1px solid red">
+        <hr>
+        <input class="text-input" type="text" placeholder="name">
+        <hr>
+        <input class="text-input" type="password" placeholder="passwd">
+        <hr>
+        <input class="text-input" type="password" placeholder="confirm passwd">
+        <hr>
 
-    <select name="" id="">
-        <option disabled selected>지역 선택하세요</option>
-        <option value="1">서울</option>
-        <option value="2">경기</option>
-        <option value="3">인천</option>
-        <option value="4">광주</option>
-    </select>
-    <br><br>
-    <!-- 이름으로 라디오 그룹을 링링하는거는 몰랐다..! -->
-    <input type="radio" name="gender">여성
-    <input type="radio" name="gender">남성
-    <br><br>
-    <input type="checkbox">이용약관에 쌉동의.
-    <hr>
-    <button>가입하기</button>
+        <div>
+            <select name="" id="">
+                <option disabled selected>지역 선택하세요</option>
+                <option value="1">서울</option>
+                <option value="2">경기</option>
+                <option value="3">인천</option>
+                <option value="4">광주</option>
+            </select>
+            <br>
+            <!-- 이름으로 라디오 그룹을 링링하는거는 몰랐다..! -->
+            <input type="radio" name="gender">여성
+            <input type="radio" name="gender">남성
+            <br>
+            <input type="checkbox">이용약관에 쌉동의.
+            <hr>
+            <button>가입하기</button>
+
+        </div>
+    </div>
 </body>
 
 </html>

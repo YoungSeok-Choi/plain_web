@@ -7,9 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            box-sizing: border-box;
+        .pb {
+            width: 500px;
+            height: 500px;
+            border: 10px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+        .pb-Horizen {
+            width: 500px;
+            height: 500px;
+            border: 10px solid aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
 
         div {
             width: 80px;
@@ -29,9 +45,20 @@
 </head>
 
 <body>
-    <div id="contentBox">박스 1</div>
-    <div>2박스 1</div>
-    <div id="borderBox">3박스 1</div>
+    <div class="pb">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <br><br><br>
+    <hr>
+    <div class="pb-Horizen">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
 </body>
 
 </html>
